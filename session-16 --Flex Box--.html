@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+        <style>
+            .flex-container
+            {
+                display: flex;
+                height: 850px;
+                width: 1900px;
+                background: linear-gradient(to right,pink,lavender,purple);
+                justify-content: center;
+                align-items: center;
+            }
+            .flex-item
+            {
+                height: 500px;
+                width: 500px;
+                margin: 20px;
+            }
+            header
+            {
+                height:200px;
+                background-color: aqua;
+            }
+            img
+            {
+                height:150px;
+                width:150px;
+                float: left;
+            }
+          
+           
+        </style>
+        <title>Aarnav's Resturaunt</title>
+        <link rel="shortcut icon" href="favorite-foods.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+        <marquee direction="right">
+        <img src="res.gif">
+        <h1 style="padding-top: 70px;">Aarnav's Resturaunt</h1>
+        </marquee>
+        </header>
+        <div class="flex-container">
+            <div class="flex-item" style="background-image:url(https://www.whiskaffair.com/wp-content/uploads/2021/10/Andhra-Chicken-Curry-2-3.jpg);background-size: contain;"><h1 style="color: white; text-align: center;">Chicken Curry</h1>
+            <a href="chiken-curry_order.html"><button type="button">Place Order</button></a></div>
+            <div class="flex-item" style="background-image:url(https://www.recipetineats.com/wp-content/uploads/2022/05/Picking-up-Supreme-Soy-Noodles-chopsticks.jpg);background-size: 100% 100%;"><h1 style="color: white; text-align: center;">Noodles</h1>
+            <a href="order.html"><button type="button">Place Order</button></a></div>
+            <div class="flex-item" style="background-image:url(https://www.kingarthurbaking.com/sites/default/files/2021-10/sourdough-pizza-crust.jpg);background-size: 100% 100%;"><h1 style="color: white; text-align: center;">Pizza</h1>
+            <a href="pizza_order.html"><button type="button">Place Order</button></a></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+        <script>
+            function load()
+            {
+                alert("The Greatest Noodles you will ever taste!!")
+            }
+            function ok()
+            {
+                document.getElementById("yes").innerHTML="Thank You For Your Feedback."
+                document.getElementById("right").style.backgroundColor="purple"
+                document.getElementById("wrong").style.backgroundColor="white"
+            }
+            function no()
+            {
+                document.getElementById("yes").innerHTML="Sorry You Didn't Like It."
+                document.getElementById("wrong").style.backgroundColor="green"
+                document.getElementById("right").style.backgroundColor="white"
+            }
+        </script>
+        <style>
+            article
+            {
+                background-color: lavender;
+                width: 400px;
+                height: 1500px;
+                float: left;
+            }
+            section
+            {
+                background-color:blue;
+                width: 1700px;
+                height: 1500px;
+                margin-left: 400px;
+            }
+            li
+            {
+                display: inline;
+                padding: 30px;
+            }
+            nav
+            {
+                background-color: aquamarine;
+                height: 50px;
+                font-size: 25px;
+                padding-bottom: 2px;
+            }
+            .items
+            {
+                height: 600px;
+                width: 500px;
+                border: 5px solid black;
+                float: left;
+                margin-right: 20px;
+                margin-left: 20px;
+                margin-bottom: 50px;
+                background-color: pink;
+            }
+            img
+            {
+                height: 400px;
+                width: 400px;
+               
+            }
+            .order
+            {
+                height: 600px;
+                width: 500px;
+                border: 5px solid black;
+                float: left;
+                margin-right: 20px;
+                margin-left: 20px;
+                background-color: pink;
+            }
+            .dropdown-content
+            {
+                display: none;
+                position: absolute;
+                min-width: 100px;
+                background-color: lightgreen;
+                z-index: 1;
+            }
+            .dropdown
+            {
+                display: inline-block;
+            }
+            .dropdown:hover .dropdown-content
+            {
+                display: block;
+            }
+            .img1
+            {
+                height: 400px; width: 500px;
+                border:1px solid black;
+                
+            }
+        </style>
+    </head>
+    <body onload="load()">
+        <header style="background-color:grey">
+            <img src="https://thumbs.dreamstime.com/b/logo-noodle-japanese-restaurant-bowl-chopstick-noodle-icon-illustration-logo-noodle-japanese-restaurant-138579106.jpg" style="height: 95px; width: 100px; float:left; border:1px solid black">
+           <h1 style="text-align:center; padding:30px">
+            NOODLES
+           </h1>
+        </header>
+        <nav>
+            <ul>
+                <div class="dropdown">
+                    <li>Menu</li>
+                    <div class="dropdown-content">
+                        <a href="order.html"><p>Noodles</p></a>
+                        <a href="pizza_order.html"><p>Pizza</p></a>
+                        <a href="chiken-curry_order.html"><p>Chicken</p></a>
+                    </div>
+                    </div>
+    
+                    <div class="dropdown">
+                    <li>About</li>
+                    <div class="dropdown-content">
+                        <p>help</p>
+                        <p>service</p>
+                        <p>reviews</p>
+                    </div>  
+                    </div>
+    
+                    <div class="dropdown">
+                    <li>Contact</li>
+                    <div class="dropdown-content">
+                        <p>manager</p>
+                        <p>CEO</p>
+                        <p>founder</p>
+                        <p>staff and security</p> 
+                    </div> 
+                    </div>
+    
+                    <div class="dropdown">
+                    <li>Career</li>
+                    <div class="dropdown-content">
+                        <p>chef</p>
+                        <p>custodian</p>
+                        <p>cashier</p>
+                        <p>waiter</p>
+                    </div>
+                    </div>
+            </ul>
+        </nav>
+        <article>
+            <iframe style="margin-top:30px;" width="400px" height="315px" src="https://www.youtube.com/embed/h9VVxC0beFk?autoplay=1&mute=1" title="YouTube video player" autoplay frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div>
+                <img src="https://st4.depositphotos.com/1388860/28381/v/1600/depositphotos_283814744-stock-illustration-25-percent-off-neon-lettering.jpg" >
+            </div>
+            <div>
+                <h1>
+                    ON ALL DRINKS!!!!
+                </h1>
+                <img src="https://www.shutterstock.com/image-photo/double-cool-ice-soft-drink-260nw-647315608.jpg">
+            </div>
+            <p id="yes" style="text-align: center;">
+                How would you rate your experiance?
+            </p>
+            <button type="button" onclick="ok()" id="right">Yes it was good</button>
+            <button type="button" onclick="no()" id="wrong">No it was not good</button>
+        </article>
+        <section>
+        <div class="items">
+            <h1>
+                CHICKEN NOODLES
+            </h1>
+            <img src="https://img.taste.com.au/QRkWe_Eq/taste/2022/05/slow-cooker-kung-pao-chicken-noodles-178393-2.jpg" class="img1">
+            <p>
+                Spicy Hakka Noodles With Fresh Veggies And Fried Crispy Chicken.
+                to place order click here.
+            </p>
+            <a href="Favorite Food Form.html"><button type="button">PLACE ORDER HERE</button></a>
+        </div>
+        <div class="items">
+            <h1>VEG NOODLES</h1>
+            <img class="img1" src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img,w_819,h_1024/https://woonheng.com/wp-content/uploads/2021/03/Cantonese-Soy-Sauce-Fried-Noodle-4-819x1024.jpg">
+            <p>
+                Fried Noodles With An Big Assortment Of Veg Items Such As Bell Peppers, Broccoli, Mushroom, And Tomatoes.
+                To Place Your Order, Click Below.
+             </p>
+             <a href="Favorite Food Form.html">
+                <button type="button">
+                    PLACE ORDER
+                </button>
+            </a>
+        </div>
+        <div class="items">
+            <h1>
+                SPICY NOODLES
+            </h1>
+            <img class="img1" src="https://drivemehungry.com/wp-content/uploads/2019/07/szechuan-noodles-garlic-chili-oil-2.jpg">
+            <p>
+                Spicy Szechuan Noodles with Garlic Chili oil, an assortment of spices, cilantro, and Sesame seeds.
+                To Place your order click below.
+            </p>
+            <a href="Favorite Food Form.html">
+                <button type="button">
+                    CLICK HERE TO PLACE ORDER
+                </button>
+            </a>
+        </div>
+        <div class="order">
+            <h1>
+                Macaroni And Cheese
+            </h1>
+            <img class="img1" src="https://www.foodandwine.com/thmb/V5BfC28rOT3bWRZQyxnavrzs-5A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/southern-style-mac-n-cheese-FT-RECIPE1121-1-6ac85260b1794024ab0bf122ae6951c5.jpg">
+            <p>
+                Baked, Southern Macaroni with freshly made, ultra creamy cheese.
+                In order to buy this item click below to order.
+            </p>
+            <a href="Favorite Food Form.html"><button type="button">CLICK HERE TO ORDER</button></a>
+        </div>
+        <div class="order">
+            <h1>
+                Drunken Noodles
+            </h1>
+            <img src="https://images.squarespace-cdn.com/content/v1/5ac1524aaf20962396c278a4/1606029821914-RF6DCYCNQ2VY014V2H2E/C3BC565F-AF8C-458B-B87C-5C53F15AA004.jpg" class="img1">
+            <p>
+                A special type of noodles developed in thailand, made of Flat, long, noodles that are soaked in sauce.
+                To order, click below.
+            </p>
+            <a href="Favorite Food Form.html"><button type="button">PLACE ORDER HERE</button></a>
+        </div>
+        <div class="order">
+            <h1>
+                Ramen Noodles
+            </h1>
+            <img src="https://theflavoursofkitchen.com/wp-content/uploads/2022/02/Sesame-Garlic-Ramens-1-scaled.jpg" class="img1">
+            <p>
+                Ramen is type of noodle created in Japan. It is made out of Spicy Ramen noodle which is tossed in a Sesame, Soy, and Garlic sauce.
+                Click below to order.
+            </p>
+            <a href="Favorite Food Form.html"><button type="button">TO ORDER, CLICK BELOW</button></a>
+        </div>
+        </section>
+        </body>
+</html>    
